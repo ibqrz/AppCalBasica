@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalDescFac.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="15"
+            Spacing="20">
+
+            <Label
+                x:Name="lblValorMensalidade"
+                Text="Valor da Mensalidade {R$}"/>
+
+            <Entry
+                x:Name="etrValorMensalidade"
+                Placeholder="(Digite aqui o valor da mensalidade)"
+                BackgroundColor="LightGray"/>
+
+            <Label
+                x:Name="lblDiaPAgamento"
+                Text="Informe o dia de pagamento"/>
+
+            <Entry
+                x:Name="etrDiaPagamento"
+                Placeholder="(Digite aqui o dia de pagamento)"
+                BackgroundColor="LightGrey"/>
+
+            <Button
+                x:Name="btCalcularDesconto"
+                Text="Calcular Desconto"
+                FontSize="Medium"/>
+            <Button
+                x:Name="btCalcularDesconto2"
+                Text="Calcular Desconto"
+                FontSize="Medium"/>
+            <Button
+                x:Name="btCalcularDesconto3"
+                Text="Calcular Desconto"
+                FontSize="Medium"/>
+            <Button
+                x:Name="btCalcularDesconto4"
+                Text="Calcular Desconto"
+                FontSize="Medium"/>
+            <Button
+                x:Name="btCalcularDesconto5"
+                Text="Calcular Desconto"
+                FontSize="Medium"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

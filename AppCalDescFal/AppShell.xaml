@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="AppCalPadrao.AppShell"
+    x:Class="AppCalDescFal.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:AppCalPadrao"
+    xmlns:local="clr-namespace:AppCalDescFal"
     Shell.FlyoutBehavior="Disabled"
-    Title="AppCalPadrao">
+    Title="AppCalDescFal">
 
     <ShellContent
+        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

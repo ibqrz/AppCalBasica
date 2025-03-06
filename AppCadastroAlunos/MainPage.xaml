@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCadastroAlunos.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="10">
+            <Label x:Name="lblRegistroAcademico" Text="Registro Acadêmico"/>
+            <Entry x:Name="etrRegistroAcademico" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblNomeCompleto" Text="Nome Completo"/>
+            <Entry x:Name="etrNomeCompleto" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblDataNascimento" Text="Data de Nascimento"/>
+            <Entry x:Name="etrDataNascimento" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblGenero" Text="Genero"/>
+            <Picker x:Name="lsvGenero" BackgroundColor="LightGray" TextColor="Black">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Feminino</x:String>
+                        <x:String>Masculino</x:String>
+                        <x:String>Outro</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label x:Name="lblEmail" Text="Email"/>
+            <Entry x:Name="etrEmail" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblCpf" Text="CPF"/>
+            <Entry x:Name="etrCpf" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblRg" Text="RG"/>
+            <Entry x:Name="etrRg" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblAuxilioTransporte" Text="Auxílio Transporte?"/>
+           
+            <Grid ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <CheckBox x:Name="chbxAuxioTransporte" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblSim" Text="Sim" Grid.Row="0" Grid.Column="1" TranslationX="-135" TranslationY="12"/>
+            </Grid>
+
+            <Button x:Name="btnCadastrar" Text="Cadastrar"/>
+            <Button x:Name="btnLimpar" Text="Limpar"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
