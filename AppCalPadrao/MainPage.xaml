@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCalBasica.MainPage">
+    <ScrollView>
+        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="lblTitulo" Text="Calculadora Padrão" Grid.Row="0" Grid.ColumnSpan="4" HorizontalOptions="Center" FontSize="Medium"/>
+            <Entry x:Name="etrInserir" Grid.Row="1" Grid.ColumnSpan="4" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Button x:Name="btnPortentagem" Text="%" Grid.Row="2" Grid.Column="0"/>
+            <Button x:Name="btnCE" Text="CE" Grid.Row="2" Grid.Column="1"/>
+            <Button x:Name="btnC" Text="C" Grid.Row="2" Grid.Column="2"/>
+            <Button x:Name="btnDel" Text="~Del~" Grid.Row="2" Grid.Column="3"/>
+
+            <Button x:Name="btn1_X" Text="1/X" Grid.Row="3" Grid.Column="0"/>
+            <Button x:Name="btnXaoQuadrado" Text="X²" Grid.Row="3" Grid.Column="1"/>
+            <Button x:Name="btnRaizQuadrada" Text="√" Grid.Row="3" Grid.Column="2"/>
+            <Button x:Name="btnDivisor" Text="/" Grid.Row="3" Grid.Column="3"/>
+
+            <Button x:Name="btnSete" Text="7" Grid.Row="4" Grid.Column="0"/>
+            <Button x:Name="btnOito" Text="8" Grid.Row="4" Grid.Column="1"/>
+            <Button x:Name="btnNove" Text="9" Grid.Row="4" Grid.Column="2"/>
+            <Button x:Name="btnMultiplicacao" Text="X" Grid.Row="4" Grid.Column="3"/>
+
+            <Button x:Name="btnQuatro" Text="4" Grid.Row="5" Grid.Column="0"/>
+            <Button x:Name="btnCinco" Text="5" Grid.Row="5" Grid.Column="1"/>
+            <Button x:Name="btnSeis" Text="6" Grid.Row="5" Grid.Column="2"/>
+            <Button x:Name="btnSubtracao" Text="-" Grid.Row="5" Grid.Column="3"/>
+
+            <Button x:Name="btnUm" Text="1" Grid.Row="6" Grid.Column="0"/>
+            <Button x:Name="btnDois" Text="2" Grid.Row="6" Grid.Column="1"/>
+            <Button x:Name="btnTres" Text="3" Grid.Row="6" Grid.Column="2"/>
+            <Button x:Name="btnSoma" Text="+" Grid.Row="6" Grid.Column="3"/>
+
+            <Button x:Name="btnMaisMenos" Text="+/-" Grid.Row="7" Grid.Column="0"/>
+            <Button x:Name="btnZero" Text="0" Grid.Row="7" Grid.Column="1"/>
+            <Button x:Name="btnVirgula" Text="," Grid.Row="7" Grid.Column="2"/>
+            <Button x:Name="btnIgual" Text="=" Grid.Row="7" Grid.Column="3"/>
+           
+        </Grid>
+    </ScrollView>
+</ContentPage>
+
