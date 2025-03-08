@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCadastroCliente.MainPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="10" BackgroundColor="LightGray">
+            <Image x:Name="imgLogin" Source="user.png" HeightRequest="100" WidthRequest="100"/>
+            <Grid ColumnSpacing="10" RowSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lblNome" Text="Nome" Grid.Row="0" Grid.Column="0" TextColor="Black"/>
+                <Entry x:Name="etrNome" BackgroundColor="White" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="lblSobrenome" Text="Sobrenome" Grid.Row="0" Grid.Column="1" TextColor="Black"/>
+                <Entry x:Name="etrSobrenome" BackgroundColor="White" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+                <Label x:Name="lblDataNascimento" Text="Data de Nascimento" Grid.Row="2" Grid.Column="0" TextColor="Black"/>
+                <DatePicker x:Name="etrDataNascimento" BackgroundColor="White" TextColor="Black" Grid.Row="3" Grid.Column="0" Format="dd/mm/yyyy"/>
+                <Label x:Name="lblGenero" Text="Gênero" Grid.Row="2" Grid.Column="1" TextColor="Black"/>
+                <Picker x:Name="ckGenero" BackgroundColor="White" TextColor="Black" Grid.Row="3" Grid.Column="1">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Feminino</x:String>
+                            <x:String>Masculino</x:String>
+                            <x:String>Outro</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label x:Name="lblRua" Text="Rua" Grid.Row="4" Grid.Column="0" TextColor="Black"/>
+                <Entry x:Name="etrRua" BackgroundColor="White" TextColor="Black" Grid.Row="5" Grid.Column="0"/>
+                <Label x:Name="lblNum" Text="Número" Grid.Row="4" Grid.Column="1" TextColor="Black"/>
+                <Entry x:Name="etrNum" BackgroundColor="White" TextColor="Black" Grid.Row="5" Grid.Column="1"/>
+                <Label x:Name="lblCidade" Text="Cidade" Grid.Row="6" Grid.Column="0" TextColor="Black"/>
+                <Entry x:Name="etrCidade" BackgroundColor="White" TextColor="Black" Grid.Row="7" Grid.Column="0"/>
+                <Label x:Name="lblEstado" Text="Estado" Grid.Row="6" Grid.Column="1" TextColor="Black"/>
+                <Entry x:Name="etrEstado" BackgroundColor="White" TextColor="Black" Grid.Row="7" Grid.Column="1"/>
+                <Label x:Name="lblEmail" Text="Email" Grid.Row="8" Grid.Column="0" TextColor="Black"/>
+                <Entry x:Name="etrEmail" BackgroundColor="White" TextColor="Black" Grid.Row="9" Grid.ColumnSpan="2"/>
+                <Label x:Name="lblCpf" Text="CPF" Grid.Row="10" Grid.Column="0" TextColor="Black"/>
+                <Entry x:Name="etrCpf" BackgroundColor="White" TextColor="Black" Grid.Row="11" Grid.Column="0"/>
+                <Label x:Name="lblRg" Text="RG" Grid.Row="10" Grid.Column="1" TextColor="Black"/>
+                <Entry x:Name="etrRg" BackgroundColor="White" TextColor="Black" Grid.Row="11" Grid.Column="1"/>
+                <Label x:Name="lblTermosCondicoes" Text="Aceita os termos e condições?" Grid.Row="12" Grid.ColumnSpan="2" TextColor="Black"/>
+                <CheckBox x:Name="chbxAuxioTransporte" Grid.Row="13" Grid.Column="0"/>
+                <Label x:Name="lblSim" Text="Sim" Grid.Row="13" Grid.Column="0" TranslationX="35" TranslationY="12" TextColor="Black"/>
+                <Button x:Name="btnGravar" Text="Gravar" Grid.Row="14" Grid.Column="0" TextColor="White" BackgroundColor="Brown"/>
+                <Button x:Name="btnVoltar" Text="Voltar" Grid.Row="14" Grid.Column="1" TextColor="White" BackgroundColor="Brown"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
