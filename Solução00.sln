@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCadastroAlunos", "AppCad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDiasVividos", "AppDiasVividos\AppDiasVividos.csproj", "{B5B7F367-6F15-454F-B923-09FD6471A0E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCadastroCliente", "AppCadastroCliente\AppCadastroCliente.csproj", "{66A23B41-1C8A-4E95-B8D0-ACB4CD1050CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,12 @@ Global
 		{B5B7F367-6F15-454F-B923-09FD6471A0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5B7F367-6F15-454F-B923-09FD6471A0E0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B5B7F367-6F15-454F-B923-09FD6471A0E0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{66A23B41-1C8A-4E95-B8D0-ACB4CD1050CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A23B41-1C8A-4E95-B8D0-ACB4CD1050CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A23B41-1C8A-4E95-B8D0-ACB4CD1050CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{66A23B41-1C8A-4E95-B8D0-ACB4CD1050CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A23B41-1C8A-4E95-B8D0-ACB4CD1050CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66A23B41-1C8A-4E95-B8D0-ACB4CD1050CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
