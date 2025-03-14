@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCalcularMedias", "AppCal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDiasVividos2", "AppDiasVividos2\AppDiasVividos2.csproj", "{36CF9AA2-D504-444C-8FB5-342E3AC5A2B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMenuEventos", "AppMenuEventos\AppMenuEventos.csproj", "{24969B9A-F53D-4714-BA1E-C19F492E05C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,12 @@ Global
 		{36CF9AA2-D504-444C-8FB5-342E3AC5A2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36CF9AA2-D504-444C-8FB5-342E3AC5A2B3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36CF9AA2-D504-444C-8FB5-342E3AC5A2B3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{24969B9A-F53D-4714-BA1E-C19F492E05C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24969B9A-F53D-4714-BA1E-C19F492E05C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24969B9A-F53D-4714-BA1E-C19F492E05C9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{24969B9A-F53D-4714-BA1E-C19F492E05C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24969B9A-F53D-4714-BA1E-C19F492E05C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24969B9A-F53D-4714-BA1E-C19F492E05C9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
