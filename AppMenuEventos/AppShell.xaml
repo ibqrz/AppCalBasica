@@ -8,36 +8,49 @@
     Title="AppMenuEventos"
     Shell.TabBarIsVisible="False">
 
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout
+            Spacing="10">
+            <Label 
+                Text="Sistema de Conversão"
+                FontSize="20"
+                HorizontalTextAlignment="Center"/>
+            <Image 
+                Source="convert.png"
+                WidthRequest="90"
+                HeightRequest="150"/>
+
+            <Label 
+                Text="MENU"
+                HorizontalTextAlignment="Center"/>
+
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
     <FlyoutItem
-        Title="MENU"
         FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
-            Title="Home"
+            Title="Sobre"
             ContentTemplate="{DataTemplate local:MainPage}"
+            FlyoutIcon="sobre.png"
             Route="MainPage" />
 
         <ShellContent
             Title="Kilometros > Metros"
             ContentTemplate="{DataTemplate local:KmMt}"
+            FlyoutIcon="convert.png"
             Route="KmMt" />
 
         <ShellContent
-            Title="Metros > Cetnímetros"
+            Title="Metros > Centímetros"
             ContentTemplate="{DataTemplate local:MtCm}"
+            FlyoutIcon="convert.png"
             Route="MtCm" />
 
         <ShellContent
             Title="Hectometros > Metros"
             ContentTemplate="{DataTemplate local:HecMt}"
+            FlyoutIcon="convert.png"
             Route="HecMt" />
-
-        <ShellContent
-            Title="Sobre"
-            ContentTemplate="{DataTemplate local:Sobre}"
-            Route="Sobre" />
-
     </FlyoutItem>
-
-    
-
 </Shell>

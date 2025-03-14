@@ -3,44 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMenuEventos.HecMt"
              Title="HecMt">
-    <VerticalStackLayout
+
+    <ScrollView>
+        <VerticalStackLayout
         Spacing="20"
         Padding="20">
-        <Label 
-            Text="Covesor"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            <Label 
+                Text="Convesor"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
 
-        <Label 
-            Text="Hectometro > Metros"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            <Label 
+                Text="Hectometro > Metros"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
 
-        <Label 
-            x:Name="lblHectometros"
-            Text="Hectometros" />
+            <Label 
+                x:Name="lblHectometros"
+                Text="Hectometros" />
 
-        <Entry 
-            x:Name="etrHectometros"/>
+            <Entry 
+                x:Name="etrHectometros"
+                Keyboard="Numeric"/>
 
-        <Button
-            x:Name="btnCoverter"
-            Text="Coverter"
-            Clicked="btnCoverterOnClicked"/>
+            <Button
+                x:Name="btnConverter"
+                Text="Converter"
+                Clicked="btnConverterOnClicked"/>
 
-        <Label
-            x:Name="lblMetros"
-            Text="Metros"/>
+            <Label
+                x:Name="lblMetros"
+                Text="Metros"/>
 
-        <Entry
-            x:Name="etrMetros"
-            HorizontalTextAlignment="Center"
-            IsEnabled="False"/>
+            <Entry
+                x:Name="etrMetros"
+                HorizontalTextAlignment="Center"
+                TextColor="Black"
+                IsEnabled="False"/>
 
-        <Button
-            x:Name="btnLimpar"
-            Text="Limpar"
-            Clicked="btnLimparOnClicked"/>
+            <Button
+                x:Name="btnLimpar"
+                Text="Limpar"
+                Clicked="btnLimparOnClicked"/>
         
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>    
 </ContentPage>
