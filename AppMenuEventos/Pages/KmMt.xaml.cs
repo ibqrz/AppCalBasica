@@ -7,7 +7,7 @@ public partial class KmMt : ContentPage
 		InitializeComponent();
 	}
 
-	private void btnCoverterOnClicked(object sender, EventArgs e)
+	private void btnConverterOnClicked(object sender, EventArgs e)
 	{
 		float metros;
 
@@ -15,7 +15,11 @@ public partial class KmMt : ContentPage
 
 		etrMetros.Text = metros.ToString();
 
-	}
+        DisplayAlert("Km > m",
+			$"{metros} m",
+			"Ok");
+
+    }
 
 	private void btnLimparOnClicked(object sender, EventArgs e)
 	{

@@ -3,45 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMenuEventos.MtCm"
              Title="MtCm">
-    <VerticalStackLayout
-        Spacing="20"
-        Padding="20">
-        
-        <Label 
-            Text="Covesor"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="20">
 
-        <Label 
-            Text="Metros > Centímetros"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            <Label 
+                Text="Convesor"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
 
-        <Label 
-            x:Name="lblMetros"
-            Text="Metros" />
+            <Label 
+                Text="Metros > Centímetros"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
 
-        <Entry 
-            x:Name="etrMetros"/>
+            <Label 
+                x:Name="lblMetros"
+                Text="Metros" />
 
-        <Button
-            x:Name="btnCoverter"
-            Text="Coverter"
-            Clicked="btnCoverterOnClicked"/>
+            <Entry 
+                x:Name="etrMetros"
+                Keyboard="Numeric"/>
 
-        <Label
-            x:Name="lblCentimetros"
-            Text="Centímetros"/>
+            <Button
+                x:Name="btnConverter"
+                Text="Converter"
+                Clicked="btnConverterOnClicked"/>    
 
-        <Entry
-            x:Name="etrCentimetros"
-            HorizontalTextAlignment="Center"
-            IsEnabled="False"/>
+            <Label
+                x:Name="lblCentimetros"
+                Text="Centímetros"/>
 
-        <Button
-            x:Name="btnLimpar"
-            Text="Limpar"
-            Clicked="btnLimparOnClicked"/>
-        
-    </VerticalStackLayout>
+            <Entry
+                x:Name="etrCentimetros"
+                HorizontalTextAlignment="Center"
+                TextColor="Black"
+                IsEnabled="False"/>
+
+            <Button
+                x:Name="btnLimpar"
+                Text="Limpar"
+                Clicked="btnLimparOnClicked"/>  
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

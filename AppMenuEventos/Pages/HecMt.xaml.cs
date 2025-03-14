@@ -7,13 +7,17 @@ public partial class HecMt : ContentPage
 		InitializeComponent();
 	}
 
-    private void btnCoverterOnClicked(object sender, EventArgs e)
+    private void btnConverterOnClicked(object sender, EventArgs e)
     {
         float metros;
 
         metros = float.Parse(etrHectometros.Text) * 100;
 
         etrMetros.Text = metros.ToString();
+
+        DisplayAlert("Hm > m",
+            $"{metros} m",
+            "Ok");
 
     }
 
