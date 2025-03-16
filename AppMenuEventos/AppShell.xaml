@@ -6,15 +6,38 @@
     xmlns:local="clr-namespace:AppMenuEventos"
     Shell.FlyoutBehavior="Flyout"
     Title="AppMenuEventos"
-    Shell.TabBarIsVisible="False">
+    Shell.TabBarBackgroundColor="LightGray"
+    Shell.TabBarTitleColor="SteelBlue"
+    Shell.FlyoutBackgroundColor="LightGray"
+    Shell.TabBarDisabledColor="SteelBlue"
+    BackgroundColor="SteelBlue">
+
+    <TabBar>
+        <Tab
+            Title="Home" FlyoutIcon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab
+            Title="Km > m" FlyoutIcon="convert.png">
+            <ShellContent ContentTemplate="{DataTemplate local:KmMt}"/>
+        </Tab>
+        <Tab
+            Title="M > cm" FlyoutIcon="convert.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MtCm}"/>
+        </Tab>
+        <Tab
+            Title="Hm > m" FlyoutIcon="convert.png">
+            <ShellContent ContentTemplate="{DataTemplate local:HecMt}"/>
+        </Tab>
+        <Tab
+            Title="Sobre" FlyoutIcon="sobre.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Sobre}"/>
+        </Tab>
+    </TabBar>
 
     <Shell.FlyoutHeader>
         <VerticalStackLayout
             Spacing="10">
-            <Label 
-                Text="Sistema de Conversão"
-                FontSize="20"
-                HorizontalTextAlignment="Center"/>
             <Image 
                 Source="convert.png"
                 WidthRequest="90"
@@ -30,27 +53,33 @@
     <FlyoutItem
         FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
-            Title="Sobre"
+            Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
-            FlyoutIcon="sobre.png"
+            FlyoutIcon="home.png"
             Route="MainPage" />
 
         <ShellContent
-            Title="Kilometros > Metros"
+            Title="Km > m"
             ContentTemplate="{DataTemplate local:KmMt}"
             FlyoutIcon="convert.png"
             Route="KmMt" />
 
         <ShellContent
-            Title="Metros > Centímetros"
+            Title="M > cm"
             ContentTemplate="{DataTemplate local:MtCm}"
             FlyoutIcon="convert.png"
             Route="MtCm" />
 
         <ShellContent
-            Title="Hectometros > Metros"
+            Title="Hm > m"
             ContentTemplate="{DataTemplate local:HecMt}"
             FlyoutIcon="convert.png"
             Route="HecMt" />
+
+        <ShellContent
+            Title="Sobre"
+            ContentTemplate="{DataTemplate local:Sobre}"
+            FlyoutIcon="sobre.png"
+            Route="Sobre" />
     </FlyoutItem>
 </Shell>

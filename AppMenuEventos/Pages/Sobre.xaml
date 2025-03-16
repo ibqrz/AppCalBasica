@@ -3,24 +3,110 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMenuEventos.Sobre"
              Title="Sobre">
-    <VerticalStackLayout
-        Spacing="20"
-        Padding="20">
-        
-        <Label 
-            Text="SOBRE"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Label
-            Text="Nome: Isabel Queiroz Almeida"/>
-        <Label
-            Text="RA: 2402805"/>
-        <Label
-            Text="Matéria: Desenvolvimeto Mobile"/>
-        <Label
-            Text="Profesor: Juliano Marçal"/>
-        <Label
-            Text="Curso: Ciência da Computação 2/3-B-N"/>
-        
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20">
+            <Label 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="woman.png"
+                HeightRequest="200"/>
+
+            <Grid
+                ColumnSpacing="50"
+                RowSpacing="20"
+                Padding="20">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="Nome:"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="16"/>
+                <Label
+                    Text="Isabel Queiroz Almeida."
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    TranslationX="55"
+                    FontSize="16"/>
+                <Label
+                    Text="RA:"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="16"/>
+                <Label
+                    Text="2402805."
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    TranslationX="28"
+                    FontSize="16"/>
+                <Label
+                    Text="Matéria:"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="16"/>
+                <Label
+                    Text="Desenvolvimeto Mobile."
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    TranslationX="67"
+                    FontSize="16"/>
+                <Label
+                    Text="Profesor:"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="16"/>
+                <Label
+                    Text="Juliano Marçal."
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    TranslationX="75"
+                    FontSize="16"/>
+                <Label
+                    Text="Curso:"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="16"/>
+                <Label
+                    Text="Ciência da Computação 2/3-B-N."
+                    Grid.Row="4"
+                    Grid.ColumnSpan="2"
+                    TranslationX="54"
+                    FontSize="16"/>
+                <Label
+                    Text="App:"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="16"/>
+                <Label
+                    Text="Aplicativo de conversor de medidas."
+                    Grid.Row="5"
+                    Grid.ColumnSpan="2"
+                    TranslationX="40"
+                    FontSize="16"/>
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

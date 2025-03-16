@@ -28,7 +28,8 @@
             <Button
                 x:Name="btnConverter"
                 Text="Converter"
-                Clicked="btnConverterOnClicked"/>
+                Clicked="btnConverterOnClicked"
+                BackgroundColor="SteelBlue"/>
 
             <Label
                 x:Name="lblMetros"
@@ -43,7 +44,8 @@
             <Button
                 x:Name="btnLimpar"
                 Text="Limpar"
-                Clicked="btnLimparOnClicked"/>
+                Clicked="btnLimparOnClicked"
+                BackgroundColor="Navy"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
