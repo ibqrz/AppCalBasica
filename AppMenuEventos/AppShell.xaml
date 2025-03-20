@@ -8,32 +8,9 @@
     Title="AppMenuEventos"
     Shell.TabBarBackgroundColor="LightGray"
     Shell.TabBarTitleColor="SteelBlue"
+    Shell.TabBarForegroundColor="SteelBlue"
     Shell.FlyoutBackgroundColor="LightGray"
-    Shell.TabBarDisabledColor="SteelBlue"
     BackgroundColor="SteelBlue">
-
-    <TabBar>
-        <Tab
-            Title="Home" FlyoutIcon="home.png">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
-        </Tab>
-        <Tab
-            Title="Km > m" FlyoutIcon="convert.png">
-            <ShellContent ContentTemplate="{DataTemplate local:KmMt}"/>
-        </Tab>
-        <Tab
-            Title="M > cm" FlyoutIcon="convert.png">
-            <ShellContent ContentTemplate="{DataTemplate local:MtCm}"/>
-        </Tab>
-        <Tab
-            Title="Hm > m" FlyoutIcon="convert.png">
-            <ShellContent ContentTemplate="{DataTemplate local:HecMt}"/>
-        </Tab>
-        <Tab
-            Title="Sobre" FlyoutIcon="sobre.png">
-            <ShellContent ContentTemplate="{DataTemplate local:Sobre}"/>
-        </Tab>
-    </TabBar>
 
     <Shell.FlyoutHeader>
         <VerticalStackLayout
@@ -55,31 +32,31 @@
         <ShellContent
             Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
-            FlyoutIcon="home.png"
+            Icon="home.png"
             Route="MainPage" />
 
         <ShellContent
             Title="Km > m"
             ContentTemplate="{DataTemplate local:KmMt}"
-            FlyoutIcon="convert.png"
+            Icon="convert.png"
             Route="KmMt" />
 
         <ShellContent
             Title="M > cm"
             ContentTemplate="{DataTemplate local:MtCm}"
-            FlyoutIcon="convert.png"
+            Icon="convert.png"
             Route="MtCm" />
 
         <ShellContent
             Title="Hm > m"
             ContentTemplate="{DataTemplate local:HecMt}"
-            FlyoutIcon="convert.png"
+            Icon="convert.png"
             Route="HecMt" />
 
         <ShellContent
             Title="Sobre"
             ContentTemplate="{DataTemplate local:Sobre}"
-            FlyoutIcon="sobre.png"
+            Icon="sobre.png"
             Route="Sobre" />
     </FlyoutItem>
 </Shell>
